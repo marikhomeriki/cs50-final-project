@@ -1,7 +1,9 @@
 # Object Detection with ML
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8aVP2dt2QuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Description:
+## Video Demo:  <https://youtu.be/8aVP2dt2QuY>
+
+## Description
+
 In this web application it is possible to upload a photo and using Machine Learning app will detect objects in this photo. 
 It is also possible to see the history of uploaded photos along with the list of objects detected on these photos. 
 
@@ -16,7 +18,7 @@ In the `static` folder there is `styles.css` file where all the visual effects l
 `helpers.py` is the file where the Machine Learning model is. There is a function detect_obj, which takes image url and returns list of detected objects. 
 
 
-# Tech Stack
+## Tech Stack
 
 - Python
 - Flask
@@ -24,6 +26,3 @@ In the `static` folder there is `styles.css` file where all the visual effects l
 - HTML
 - CSS
 - [facebook/detr-resnet-50](https://huggingface.co/facebook/detr-resnet-50)
-
-
-
