@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Upload
+{% endblock %}
+
+{% block main %}
+
+    <div>
+        <form enctype="multipart/form-data" method="post">
+                 
+            {{form.hidden_tag()}}
+            {{form.file()}}
+            {{form.submit()}}
+ 
+        </form>
+        <h1>{{obj}}</h1> 
+        {% if url %}
+        <img src="{{ url }}" width="500">
+        {% endif %}
+        
+    </div>
+
+
+
+{% endblock %}
