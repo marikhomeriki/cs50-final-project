@@ -17,6 +17,18 @@ In the `static` folder there is `styles.css` file where all the visual effects l
 
 `helpers.py` is the file where the Machine Learning model is. There is a function detect_obj, which takes image url and returns list of detected objects. 
 
+Based on the Hugging Face facebook/detr-resnet-50 documentation this is a model description:
+
+>The DETR model is an encoder-decoder transformer with a convolutional backbone. Two heads are added on top of the decoder outputs in order to perform object detection: a linear layer for the class labels and a MLP (multi-layer perceptron) for the bounding boxes. The model uses so-called object queries to detect objects in an image. Each object query looks for a particular object in the image. For COCO, the number of object queries is set to 100.
+
+The model is trained using a "bipartite matching loss": one compares the predicted classes + bounding boxes of each of the N = 100 object queries to the ground truth annotations, padded up to the same length N (so if an image only contains 4 objects, 96 annotations will just have a "no object" as class and "no bounding box" as bounding box). The Hungarian matching algorithm is used to create an optimal one-to-one mapping between each of the N queries and each of the N annotations. Next, standard cross-entropy (for the classes) and a linear combination of the L1 and generalized IoU loss (for the bounding boxes) are used to optimize the parameters of the model.
+
+
+
+
+`app.py` file we are connecting with PostgreSQL and the data inserted by the user is also managed in PGAdmin. Then we call a function that saves the uploaded files and creating a url for detect_obj function. 
+
+
 
 ## Getting Started
 
@@ -30,4 +42,5 @@ In the `static` folder there is `styles.css` file where all the visual effects l
 - PostgreSQL
 - HTML
 - CSS
+- JavaScript
 - [facebook/detr-resnet-50](https://huggingface.co/facebook/detr-resnet-50)
