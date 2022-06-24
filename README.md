@@ -18,6 +18,11 @@ In the `static` folder there is `styles.css` file where all the visual effects l
 `helpers.py` is the file where the Machine Learning model is. There is a function detect_obj, which takes image url and returns list of detected objects. 
 
 
+## Getting Started
+
+- [Transformers Installation](https://huggingface.co/docs/transformers/installation)
+- [Tensorflow Installation on Mac](https://www.tensorflow.org/install/pip)
+
 ## Tech Stack
 
 - Python
