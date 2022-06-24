@@ -1,5 +1,6 @@
 # Object Detection with ML
-#### Video Demo:  <https://youtu.be/8aVP2dt2QuY>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8aVP2dt2QuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Description:
 In this web application it is possible to upload a photo and using Machine Learning app will detect objects in this photo. 
 It is also possible to see the history of uploaded photos along with the list of objects detected on these photos. 
